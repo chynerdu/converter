@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter value to convert and select conversion type"
+            android:textSize="20dp"
+            android:fontWeight="900"
+            android:layout_marginBottom="20dp"
+ />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter value to convert"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/valueToConvert"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter value"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select conversion type"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/KM_TO_MI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/KM_TO_MI" />
+
+            <RadioButton
+                android:id="@+id/MI_TO_KM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/MI_TO_KM" />
+
+            <RadioButton
+                android:id="@+id/CM_TO_IN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/CM_TO_IN" />
+
+            <RadioButton
+                android:id="@+id/IN_TO_CM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/IN_TO_CM" />
+
+            <RadioButton
+                android:id="@+id/KG_TO_LIB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/KG_TO_LIB" />
+
+            <RadioButton
+                android:id="@+id/LIB_TO_KG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/LIB_TO_KG" />
+
+            <RadioButton
+                android:id="@+id/G_TO_OZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/G_TO_OZ" />
+
+            <RadioButton
+                android:id="@+id/OZ_TO_G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/OZ_TO_G" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/convert"
+            android:layout_width="match_parent"
+            android:onClick="convertMeasurementValue"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:text="Convert"></Button>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+</LinearLayout>

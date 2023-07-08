@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="KM_TO_MI">Kilometre to Metre</string>
+    <string name="MI_TO_KM">Metre to Kilometre</string>
+    <string name="CM_TO_IN">Centimetre to Inches</string>
+    <string name="IN_TO_CM">Inches to Centimetre</string>
+    <string name="KG_TO_LIB">Kilogram to Lib</string>
+    <string name="LIB_TO_KG">Lib to Kilogram</string>
+    <string name="G_TO_OZ">Gram to Ounce</string>
+    <string name="OZ_TO_G">Ounce to Gram</string>
+
+</resources>
